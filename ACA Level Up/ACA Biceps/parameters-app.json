@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "acrName": {
+      "value": "acalevelupdemoacr"
+    },
+    "containerImage": {
+      "value": "acalevelupdemoacr.azurecr.io/samples/green:latest"
+    },
+    "name": {
+      "value": "acalevelupapp2"
+    },
+    "envname": {
+      "value": "acalevelupenv"
+    },
+    "acaIdentityName": {
+      "value": "academoidentity"
+    },
+    "useExternalIngress": {
+      "value": true
+    },
+    "containerPort": {
+      "value": 80
+    },
+    "serviceBusNamespaceName": {
+      "value": "acalevelupdemo"
+    },
+    "serviceBusQueueName": {
+      "value": "orders"
+    }
+  }
+}
